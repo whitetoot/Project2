@@ -4,16 +4,18 @@ const path = require("path");
 router.get("/", (req, res) =>
     res.sendFile(path.join(__dirname, "../public/main.html")));
 
+router.get("/about", (req, res) =>
+    res.sendFile(path.join(__dirname, "/about.html")));
+
+router.get("/cases", (req, res) =>
+    res.sendFile(path.join(__dirname, "/cases.html")));
+
 router.get("/contact", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/contact.html")));
+    res.sendFile(path.join(__dirname, "/contact.html")));
 
 router.get("/feature", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/feature.html")));
+    res.sendFile(path.join(__dirname, "/feature.html")));
 
-router.get("/contact", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/contact.html")));
-
-router.get("/cases/:id", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/cases.html")));
-
+router.get("/product/:id", (req, res) =>
+    res.sendFile(path.join(__dirname, "../public/product.html")));
 module.exports = router;

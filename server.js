@@ -14,9 +14,8 @@ app.use(htmlRoutes);
 app.use(express.static("public"));
 
 
-//the force statement is to be used to the data base does not get wiped everytime this code runs 
-// db.sequelize.sync({ force: false }).then(() => {
-db.sequelize.sync().then(() => {
+//the force statement is to be used to the data base does not get wiped everytime this code runs
+db.sequelize.sync({ force: false }).then(() => {
     app.listen(PORT,
         () => console.log(`http://localhost:${PORT}`));
 });
