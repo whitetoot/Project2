@@ -96,8 +96,33 @@
             </div>
         </div>
     </li>
+    <h2>BetterDoctor</h2>
+    <div id="content-placeholder"></div>
+    <script id="specialties-template" type="text/x-handlebars-template">
+    <table>
+        <thead>
+        <th>uid</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Actor</th>
+        <th>Actors</th>
+        </thead>
+        <tbody>
+        {{#data}}
+        <tr>
+            <td>{{uid}}</td>
+            <td>{{name}}</td>
+            <td>{{category}}</td>
+            <td>{{description}}</td>
+            <td>{{actor}}</td>
+            <td>{{actors}}</td>
+        </tr>
+        {{/data}}
+        </tbody>
+    </table>
 
-
+</script>
 </body>
 
 </html>

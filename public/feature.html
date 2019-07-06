@@ -96,7 +96,17 @@
             </div>
         </div>
     </li>
+    <script>
 
+        let calenderEl = document.getElementById("calender");
+
+        let calender = new FullCalendar.Calender(calenderEl, {
+            plugins: ["core", "dayGrind"]
+        });
+
+        calender.render();
+
+    </script>
 
 </body>
 
