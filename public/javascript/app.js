@@ -1,11 +1,21 @@
-const apiKey = require("./../.env").apiKey;
+$.get("/api/doctors").then(function (response) {
+    console.log(response);
 
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=mental-health-nurse-practitioner&location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&sort=full-name-asc&skip=0&limit=10&user_key=",
-    "method": "GET",
-}
+    for (var i = 0; i < response.length; i++) {
+        // take each of the responses and create a new html element
+        // and append that element to "content-placeholder"
+        console.log(response[i].profile.first_name);
+        console.log(response[i].profile.last_name);
+        let docdiv = $("<div>");
+        docdiv.html(response[i].profile.first_name + " " + response[i].profile.last_name + ", " + response[i].specialties[0].actor);
+        let dscdiv = $("<div>");
+        dscdiv.html(response[i].profile.bio);
+
+        $("#content-placeholder").append(docdiv);
+        $("#content-placeholder").append(dscdiv);
+    }
+})
+
 
 $.ajax(settings).done(function (response) {
     console.log(response);

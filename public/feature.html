@@ -18,6 +18,26 @@
     <!-- End of  Zendesk Widget script -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
+    <script src="https://fullcalendar.io/releases/core/4.2.0/main.min.js"></script>
+    <script src="https://fullcalendar.io/releases/daygrid/4.2.0/main.min.js"></script>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            let calenderEl = document.getElementById("calender");
+
+            let calender = new FullCalendar.Calender(calenderEl, {
+                plugins: ["core", "dayGrid"]
+            });
+
+            calender.render();
+        });
+
+
+    </script>
+
     <title>Document</title>
 </head>
 
@@ -52,7 +72,7 @@
         </nav>
     </div> <!-- .cd-slider-nav -->
 
-
+    <div id="calendar"></div>
 
     <li class="">
         <div class="heading">
@@ -96,17 +116,7 @@
             </div>
         </div>
     </li>
-    <script>
 
-        let calenderEl = document.getElementById("calender");
-
-        let calender = new FullCalendar.Calender(calenderEl, {
-            plugins: ["core", "dayGrind"]
-        });
-
-        calender.render();
-
-    </script>
 
 </body>
 
