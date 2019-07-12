@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "Pryia_db",
+    "database": "pryia_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
@@ -16,10 +16,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "t3o074ooq0u3eeyx",
-    "password": "aeiwncsqiqbd8pbs ",
-    "database": "uud4b1hmreb94otp",
-    "host": "cdm1s48crk8itlnr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql"
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }
