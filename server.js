@@ -1,9 +1,11 @@
 const express = require("express");
 const PORT = process.env.PORT || 3000;
+require("dotenv").config();
 const app = express();
 const apiRoutes = require("./Routes/api-routes");
 const htmlRoutes = require("./Routes/html-routes");
 const db = require("./models");
+const keys = require("./keys");
 
 // setup middleware
 app.use(express.urlencoded({ extended: true }));
