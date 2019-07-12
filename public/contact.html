@@ -179,9 +179,11 @@
             $("#form-submit").click(function(e){
                 e.preventDefault()
                     const data = {name:$("#name").val(), email:$("#email").val(), message:$("#message").val()}
-                                $.post("/api/form/").then((form) => {
+                                $.post("/api/form/",data).then((form) => {
                 // build out some table or something!
-                data.empty();
+                $("#name").reset();
+                $("#email").reset();
+                $("#message").reset();
             });
             })
         
