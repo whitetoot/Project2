@@ -16,13 +16,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "zzbpkdbyhjsnuh",
-    "password": "7162c1c27544cb118fb5ba6b616b5b1e5454f74678fdfbd7d7db8fd586797227",
-    "database": "depsi2mk3ds8oj",
-    "host": "ec2-54-243-208-234.compute-1.amazonaws.com",
+    "username": "e5q6w9a91n8afc25",
+    "password": "fehzxonim9ijnpsa ",
+    "database": "kvp2fa7l70mjztss",
+    "host": "h2cwrn74535xdazj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
-    "Port": 5432,
-    "URI": "postgres://zzbpkdbyhjsnuh:7162c1c27544cb118fb5ba6b616b5b1e5454f74678fdfbd7d7db8fd586797227@ec2-54-243-208-234.compute-1.amazonaws.com:5432/depsi2mk3ds8oj",
     "operatorsAliases": false
   }
 }
