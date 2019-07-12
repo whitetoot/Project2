@@ -1,6 +1,5 @@
 //require('dotenv').config()
 const keys = process.env.BETTERDOC_ID;
-console.log("keys", keys);
 
 const router = require("express").Router();
 const db = require("../models");
