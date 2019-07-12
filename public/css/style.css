@@ -1120,12 +1120,12 @@ video::-webkit-media-controls {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  color: #fff;
+  color: black;
   margin-top: 15px;
 }
 
 .cd-slider-nav ul .selected h6 {
-  color: #ffbb05;
+  color: black;
   text-decoration: none;
 }
 
@@ -1140,7 +1140,7 @@ video::-webkit-media-controls {
   text-align: center;
   margin: 0px;
   padding: 0px;
-  background-color: #ffbb05;
+  background-color: #FFA500;
 }
 
 .cd-slider-nav .image-icon:hover {
@@ -1154,7 +1154,7 @@ video::-webkit-media-controls {
   margin-bottom: 100px;
   margin-top: -80px;
   background-color: #fff;
-  border-top: 15px solid #ffbb05;
+  border-top: 15px solid #4169E1;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -1208,7 +1208,7 @@ video::-webkit-media-controls {
   font-size: 16px;
   text-transform: uppercase;
   color: #ffbb05;
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: 0.5px;
 }
 
