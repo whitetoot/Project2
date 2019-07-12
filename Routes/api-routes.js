@@ -1,14 +1,18 @@
+
 const router = require("express").Router();
 const db = require("../models");
 
-router.get("/api/products", async (req, res) => res.json((await db.Product.findAll({}))));
-
-router.post("/api/product", (req, res) => res.json({}));
-router.get("/api/product/:id", async (req, res) => {
-    res.json(await db.Product.findOne({
-        where: {
-            id: req.params.id
-        }
-    }))
+router.post("/api/form", (req, res) => {
+    // use sequelize to store data into database
+    db.Form.create({
+        name: req.body.name,
+        email: req.body.email,
+        message: req.body.message
+    }).then(function() {
+        res.redirect("/");
+    });
 });
+
 module.exports = router;
+
+

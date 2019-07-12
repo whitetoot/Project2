@@ -173,7 +173,22 @@
                                                 <fieldset>
                                                     <button type="submit" id="form-submit" class="btn">Send
                                                         Message</button>
+                                                        <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script>
+        $(document).ready(() => {
+            $("#form-submit").click(function(e){
+                e.preventDefault()
+                    const data = {name:$("#name").val(), email:$("#email").val(), message:$("#message").val()}
+                                $.post("/api/form/").then((form) => {
+                // build out some table or something!
+                data.empty();
+            });
+            })
+        
+        });
+    </script>
                                                 </fieldset>
+
                                             </div>
                                         </form>
                                     </div>
