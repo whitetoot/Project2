@@ -181,9 +181,9 @@
                     const data = {name:$("#name").val(), email:$("#email").val(), message:$("#message").val()}
                                 $.post("/api/form/",data).then((form) => {
                 // build out some table or something!
-                //$("#name").reset();
-                //$("#email").reset();
-                //$("#message").reset();
+                $("#name").val("")
+                $("#email").val("");
+                $("#message").val("");
             });
             })
         
