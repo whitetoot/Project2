@@ -1,6 +1,4 @@
-require('dotenv').config();
-
-module.exports ={
+{
   "development": {
     "username": "root",
     "password": "root",
@@ -18,11 +16,11 @@ module.exports ={
     "operatorsAliases": false
   },
   "production": {
-    "username": process.env.JAWSDB_USR,
-    "password": process.env.JAWSDB_PWD,
-    "database": process.env.JAWSDB_DTB,
-    "host": process.env.JAWSDB_Host,
+    "username": "nx37bbcukwcm9j75",
+    "password": "mcgor51i9z01hcz1",
+    "database": "txb0uw8ypddmuzsx",
+    "host": "g9fej9rujq0yt0cd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
   }
-};
+}
