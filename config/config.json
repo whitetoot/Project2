@@ -5,6 +5,7 @@
     "database": "pryia_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
+    "port": 8889,
     "operatorsAliases": false
   },
   "test": {
@@ -15,8 +16,8 @@
     "dialect": "mysql",
     "operatorsAliases": false
   },
-    "production": {
-      "use_env_variable": "JAWSDB_URL",
-      "dialect": "mysql"
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }
