@@ -15,13 +15,8 @@
     "dialect": "mysql",
     "operatorsAliases": false
   },
-  "production": {
-    "username": "jmkhpr1sukxjlu19",
-    "password": "b9c1gz3jyeoqfery",
-    "database": "jcvrzm57c7266oa4",
-    "host": "g9fej9rujq0yt0cd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql",
-    "operatorsAliases": false
-
+    "production": {
+      "use_env_variable": "JAWSDB_URL",
+      "dialect": "mysql"
   }
 }
