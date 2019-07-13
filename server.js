@@ -15,7 +15,6 @@ app.use(apiRoutes);
 app.use(htmlRoutes);
 app.use(express.static("public"));
 
-var connection2 = require("./config_old/config.js.js.js");
 var connection = require("./config_old/connection.js.js.js");
 
 
