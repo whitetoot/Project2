@@ -16,6 +16,5 @@ router.get("/contact", (req, res) =>
 router.get("/feature", (req, res) =>
     res.sendFile(path.join(__dirname, "/feature.html")));
 
-router.get("/product/:id", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/product.html")));
+
 module.exports = router;
