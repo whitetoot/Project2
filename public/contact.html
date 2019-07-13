@@ -26,7 +26,7 @@
         <nav>
             <span class="cd-marker item-1"></span>
             <ul>
-                <li class=""><a href="/">
+                <li class="selected"><a href="/">
                         <div class="image-icon"><img class="icon-sizes" src="images/security_Black_Fill-32-512.png">
                         </div>
                         <h6>Welcome</h6>
@@ -45,7 +45,7 @@
                         <div class="image-icon"><img class="icon-sizes" src="images/cases-03-512.png"></div>
                         <h6>Cases</h6>
                     </a></li>
-                <li class="selected"><a href="/contact.html">
+                <li class=""><a href="contact.html">
                         <div class="image-icon"><img class="icon-sizes" src="images/Forms-512.png">
                         </div>
                         <h6>Contact Us</h6>
@@ -173,24 +173,7 @@
                                                 <fieldset>
                                                     <button type="submit" id="form-submit" class="btn">Send
                                                         Message</button>
-                                                        <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-    <script>
-        $(document).ready(() => {
-            $("#form-submit").click(function(e){
-                e.preventDefault()
-                    const data = {name:$("#name").val(), email:$("#email").val(), message:$("#message").val()}
-                                $.post("/api/form/",data).then((form) => {
-                // build out some table or something!
-                $("#name").val("")
-                $("#email").val("");
-                $("#message").val("");
-            });
-            })
-        
-        });
-    </script>
                                                 </fieldset>
-
                                             </div>
                                         </form>
                                     </div>
