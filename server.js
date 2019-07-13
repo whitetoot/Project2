@@ -16,6 +16,8 @@ app.use(htmlRoutes);
 app.use(express.static("public"));
 
 
+var connection = require("./config/connection.js");
+
 //the force statement is to be used to the data base does not get wiped everytime this code runs
 db.sequelize.sync({ force: false }).then(() => {
     app.listen(PORT,
