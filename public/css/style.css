@@ -114,7 +114,7 @@ video::-webkit-media-controls {
   height: 100%;
   z-index: 1;
   background-size: 100% 80%;
-  background-image: url('../images/street_city_evening_black_white_lights_buildings_hdr_25485_1920x1200.jpg') ;
+  background-image: url('../images/casesCulture_IMG_9831_1024.jpg') ;
   background-repeat: no-repeat;
   background-position: 50% -30%;
 }
@@ -1042,7 +1042,7 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
@@ -1185,13 +1185,14 @@ video::-webkit-media-controls {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  color: black;
+  color:#FFA500;
   margin-top: 15px;
 }
 
 .cd-slider-nav ul .selected h6 {
-  color: black;
+  color:#4169E1;
   text-decoration: none;
+  text-decoration: underline;
 }
 
 .cd-slider-nav .image-icon {
