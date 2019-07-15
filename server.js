@@ -6,9 +6,6 @@ const apiRoutes = require("./Routes/api-routes");
 const htmlRoutes = require("./Routes/html-routes");
 const db = require("./models");
 const keys = require("./keys");
-console.log("keys", keys);
-
-//const calendar = require("@fullcalendar");
 
 // setup middleware
 app.use(express.urlencoded({ extended: true }));
@@ -18,6 +15,8 @@ app.use(apiRoutes);
 app.use(htmlRoutes);
 app.use(express.static("public"));
 //app.use(calendar);
+
+var connection = require("./config/connection.js");
 
 
 //the force statement is to be used to the data base does not get wiped everytime this code runs
