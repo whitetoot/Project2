@@ -33,6 +33,7 @@ body {
 
 .name{
   margin-top: 14px;
+  font-weight: bold;
 }
 
 p {
