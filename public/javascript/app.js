@@ -17,7 +17,7 @@ $.get("/api/doctors").then(function (response) {
             let phoneNumber = formatPhoneNumber(response[i].practices[0].phones[0].number)
 
             let docdiv = $("<div class='name'>");
-            docdiv.html(response[i].profile.first_name + " " + response[i].profile.last_name + ", " + response[i].specialties[0].actor + ", " + phoneNumber + ", " + response[i].practices[0].visit_address.street);
+            docdiv.html(response[i].profile.first_name + " " + response[i].profile.last_name + ", " + response[i].specialties[0].actor + ", " + response[i].practices[0].visit_address.street + ", " + response[i].practices[0].visit_address.city + ", " + response[i].practices[0].visit_address.state + ", " + response[i].practices[0].visit_address.zip+ " | Tel: " + phoneNumber  );
             let dscdiv = $("<div class='bio' >");
             dscdiv.html(response[i].profile.bio);
 
